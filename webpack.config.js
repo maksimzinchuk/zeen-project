@@ -11,7 +11,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = (env, argv) => {
   const isProductionBuild = argv.mode === 'production'
-  const publicPath = '/'
+  const publicPath = '/zeen-project/'
 
   const pcss = {
     test: /\.(p|s|)css$/,

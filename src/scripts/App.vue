@@ -20,38 +20,33 @@
         Задать вопрос
       </div>
     </div>
-    <div class="chat__page">
-      <div class="chat__messages">
-        <MessageTemplate v-bind:posts="posts"></MessageTemplate>
-      </div>
-    </div>
+    <keep-alive>
+      <component :is="selectedComponent" :posts="posts"></component>
+    </keep-alive>
     <div class="chat__submit" @click="sendRandomMessage">Задать вопрос</div>
   </div>
 </template>
 
 <script>
-import MessageTemplate from './components/MessageTemplate'
 import MessagesBox from './components/MessagesBox'
 import History from './components/History'
-import {mapGetters} from 'vuex'
-import {mapActions} from 'vuex'
+import {mapActions, mapGetters} from "vuex";
 export default {
   name: 'App',
   data() {
     return {
-      selectedComponent: 'MessagesBox',
       posts: [],
+      selectedComponent: 'MessagesBox',
     }
   },
   components: {
     MessagesBox,
-    History,
-    MessageTemplate,
+    History
   },
   computed: {
     ...mapGetters({
-      getPost: 'getPost',
-    }),
+      getPost: 'getPost'
+    })
   },
   methods: {
     ...mapActions({
@@ -66,7 +61,7 @@ export default {
       rndMain: 'rndMainUser',
     }),
     getPosts() {
-      this.posts.push(this.getPost)
+      this.posts.push(this.getPost);
     },
     sendRandomMessage() {
       //генерируем моки
@@ -94,8 +89,8 @@ export default {
       this.rndMain(mainPerson)
 
       this.getPosts()
-    },
-  },
+    }
+  }
 }
 </script>
 

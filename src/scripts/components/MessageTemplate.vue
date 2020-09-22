@@ -31,7 +31,7 @@ export default {
   props: ['posts'],
   data() {
     return {
-      now: '',
+      now: ''
     }
   },
   created() {
