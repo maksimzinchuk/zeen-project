@@ -1,6 +1,6 @@
 # Landing-page Zeen
 
-Ссылка на проект: https://maksimzinchuk.github.io/test-zeen-max/index.html
+Ссылка на проект: https://maksimzinchuk.github.io/zeen-project/index.html
 
 
 ## Описание  
