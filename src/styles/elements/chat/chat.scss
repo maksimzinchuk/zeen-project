@@ -1,0 +1,212 @@
+.chat {
+  position: relative;
+  height: 486px;
+  min-width: 295px;
+  background: #f4f4f4;
+  overflow: hidden;
+  @include desktop {
+    height: 427px;
+  }
+  @include tablets {
+    height: 464px;
+  }
+  @include phones {
+    height: 420px;
+  }
+
+  &__buttons {
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    background: #f4f4f4;
+    cursor: pointer;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+
+    &_active {
+      box-shadow: 0px -2px 0px #661be3 inset;
+      border-bottom: 1px solid #661be3;
+    }
+
+    &:hover {
+      border-bottom: 1px solid #a672ff;
+    }
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+
+  &__page {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    padding: 12px 18px 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    @include desktop {
+      padding: 24px 30px 0;
+    }
+    @include phones {
+      padding: 12px 19px 0;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    background: #661be3;
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+
+    &:hover {
+      background: #a672ff;
+      cursor: pointer;
+    }
+  }
+
+  &__message {
+    margin-bottom: 20px;
+  }
+
+  &__users {
+    margin-bottom: 5px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    margin: 0;
+    color: #2b2d33;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 20px;
+    @include desktop {
+      line-height: 16px;
+    }
+    @include phones {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    &_org {
+      padding: 0 13px;
+      background: #661be3;
+      border-radius: 8px;
+      color: #ffffff;
+      @include desktop {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      @include phones {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &__name-reply {
+    display: flex;
+    margin: 0;
+    color: #00aaff;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 13px;
+    @include desktop {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    @include phones {
+      font-size: 10px;
+      line-height: 13px;
+    }
+    &::before {
+      display: block;
+      width: 8px;
+      height: 9px;
+      margin-right: 3px;
+      background-image: url('../../../images/chat/reply.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
+
+  &__time {
+    color: #999999;
+    text-align: right;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    color: #2b2d33;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    @include desktop {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    @include phones {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__quote {
+    padding-left: 11px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    margin-left: 5px;
+    border-left: 1px solid #661be3;
+  }
+
+  &__quote-name {
+    margin: 0 0 5px;
+    color: #000000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+  }
+
+  &__quote-message {
+    margin: 0;
+    color: #999999;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+  }
+}

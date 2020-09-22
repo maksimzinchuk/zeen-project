@@ -1,0 +1,125 @@
+.partner-blocks {
+  padding-top: 80px;
+  @include tablets {
+    padding-top: 62px;
+  }
+  @include phones {
+    padding-top: 60px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //margin-bottom: 19px;
+    @include desktop {
+      margin-bottom: 15px;
+    }
+    @include phones {
+      width: 291px;
+      margin: 0 auto;
+    }
+  }
+
+  &__block {
+    padding: 36px 32px 44px;
+    margin-right: 17px;
+    margin-bottom: 19px;
+    box-sizing: border-box;
+    background: #343434;
+    border-radius: 15px;
+    @include tablets {
+      padding: 35px 30px;
+    }
+    @include phones {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    &:nth-of-type(3) {
+      @include phones {
+        margin-left: 10px;
+      }
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-last-child(1) {
+      @include phones {
+        margin-bottom: 0;
+      }
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+
+    &_big {
+      width: 560px;
+      height: 226px;
+      @include desktop {
+        width: 500px;
+        height: 220px;
+      }
+      @include tablets {
+        width: 413px;
+        height: 193px;
+        box-sizing: border-box;
+      }
+      @include phones {
+        width: 291px;
+        height: 129px;
+        padding: 17px 20px;
+      }
+    }
+    &_small {
+      width: 383px;
+      height: 226px;
+      @include desktop {
+        width: 324px;
+        height: 220px;
+      }
+      @include tablets {
+        width: 275px;
+        height: 193px;
+        box-sizing: border-box;
+      }
+      @include phones {
+        width: 140px;
+        height: 141px;
+        padding: 24px 20px;
+      }
+    }
+  }
+
+  &__image {
+    align-self: flex-start;
+    @include tablets {
+      width: 55px;
+      height: 55px;
+    }
+    @include phones {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &__text {
+    margin: 30px 0 0;
+    @include text-params($text-color, 20px, normal, normal, 28px);
+    @include desktop {
+      margin: 25px 0 0;
+      @include text-params($text-color, 18px, normal, normal, 26px);
+    }
+    @include tablets {
+      margin: 20px 0 0;
+      @include text-params($text-color, 16px, normal, normal, 24px);
+    }
+    @include phones {
+      margin: 15px 0 0;
+      @include text-params($text-color, 12px, normal, normal, 16px);
+    }
+  }
+}

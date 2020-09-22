@@ -1,0 +1,16 @@
+.about {
+  margin: 44px 0 0;
+  @include text-params($text-color, 24px, normal, normal, 32px);
+  @include desktop {
+    margin: 40px 0 0;
+    @include text-params($text-color, 22px, normal, normal, 30px);
+  }
+  @include tablets {
+    margin: 31px 0 0;
+    @include text-params($text-color, 18px, normal, normal, 26px);
+  }
+  @include phones {
+    margin: 25px 0 0;
+    @include text-params($text-color, 16px, normal, normal, 22px);
+  }
+}

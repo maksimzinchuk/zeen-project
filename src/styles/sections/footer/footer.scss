@@ -1,0 +1,56 @@
+.footer {
+  width: 100%;
+  background-color: $main-dark;
+  @include desktop {
+    padding: 0 32px;
+    box-sizing: border-box;
+  }
+  @include phones {
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    padding: 40px 0 55px;
+    margin: 0 auto;
+    border-top: 0.5px solid #bbbbbb;
+    @include desktop {
+      width: 100%;
+      padding: 40px 0 59px;
+      box-sizing: border-box;
+    }
+    @include phones {
+      flex-direction: column;
+      padding: 40px 0 50px;
+    }
+  }
+
+  &__logo {
+    width: 139px;
+    @include phones {
+      width: 98px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include phones {
+      align-self: flex-start;
+      margin-top: 25px;
+    }
+  }
+
+  &__contact {
+    align-self: flex-end;
+    margin: 0;
+    @include text-params(#8c8c8c, 14px, normal, normal, 20px);
+    @include phones {
+      align-self: flex-start;
+      margin-bottom: 5px;
+    }
+  }
+}

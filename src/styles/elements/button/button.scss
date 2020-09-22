@@ -1,0 +1,44 @@
+.button {
+  padding: 18px 30px;
+  background: linear-gradient(72.99deg, #7b35f1 26.5%, #a672ff 119.58%);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  @include text-params($text-color, 16px, normal, 600, 19px);
+  @include desktop {
+    display: none;
+  }
+  @include tablets {
+    padding: 16px 28px;
+    @include text-params($text-color, 15px, normal, 600, 18px);
+  }
+
+  &_mobile {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &_footer {
+    @include desktop {
+      display: block;
+    }
+    &[disabled] {
+      background-color: transparent;
+      cursor: not-allowed;
+    }
+  }
+
+  &:hover {
+    background: $span-color;
+  }
+
+  &:active {
+    background: #7b35f1;
+  }
+}

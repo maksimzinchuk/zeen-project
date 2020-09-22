@@ -1,0 +1,28 @@
+.speakers {
+  width: 100%;
+  padding: 125px 0 120px;
+  background-color: $main-dark-alter;
+  @include desktop {
+    padding: 103px 0 100px;
+  }
+  @include tablets {
+    padding: 86px 0 80px;
+  }
+  @include phones {
+    padding: 73px 15px 73px;
+    box-sizing: border-box;
+  }
+
+  &__paragraph {
+    padding: 0;
+    margin: 0 0 20px;
+
+    @include phones {
+      margin: 0 0 15px;
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}

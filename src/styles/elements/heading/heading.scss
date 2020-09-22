@@ -1,0 +1,17 @@
+.heading {
+  margin: 0;
+  @include text-params($text-color, 48px, normal, bold, 56px);
+  @include desktop {
+    @include text-params($text-color, 42px, normal, bold, 50px);
+  }
+  @include tablets {
+    @include text-params($text-color, 36px, normal, bold, 44px);
+  }
+  @include phones {
+    @include text-params($text-color, 24px, normal, bold, 32px);
+  }
+
+  &__span {
+    color: $span-color;
+  }
+}

@@ -1,0 +1,55 @@
+.links {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+  @include desktop {
+    padding-top: 60px;
+  }
+  @include tablets {
+    padding-top: 50px;
+  }
+  @include phones {
+    flex-direction: column;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    margin-right: 78px;
+    @include phones {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    & .link__mobile {
+      @include phones {
+        display: none;
+      }
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+      @include phones {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__image {
+    margin-right: 13px;
+    @include tablets {
+      width: 22px;
+      height: 22px;
+      margin-right: 15px;
+    }
+  }
+
+  &__link {
+    text-align: center;
+    text-decoration: none;
+    @include text-params($span-color, 18px, normal, normal, 24px);
+    @include tablets {
+      @include text-params($span-color, 16px, normal, normal, 22px);
+    }
+  }
+}

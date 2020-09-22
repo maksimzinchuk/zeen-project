@@ -1,0 +1,184 @@
+.form {
+  width: 100%;
+  padding: 123px 0 150px;
+  background: $main-dark;
+  overflow: hidden;
+  @include desktop {
+    padding: 100px 0 150px;
+  }
+  @include tablets {
+    padding: 78px 0 150px;
+  }
+  @include phones {
+    padding: 71px 15px 79px;
+    box-sizing: border-box;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 64px 160px 0;
+    @include desktop {
+      padding: 50px 108px 0;
+    }
+    @include tablets {
+      padding: 50px 75px 0;
+    }
+    @include phones {
+      padding: 40px 0 0;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: -140px;
+    right: -73px;
+    width: auto;
+    height: 881px;
+    transform: rotate(-14.5deg);
+    @include desktop {
+      right: -122px;
+    }
+    @include tablets {
+      top: -36px;
+      right: -83px;
+      height: 560px;
+    }
+    @include phones {
+      display: none;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    @include phones {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__input,
+  &__text {
+    width: 462px;
+    padding: 18px 25px;
+    box-sizing: border-box;
+    background: #343434;
+    border: 1px solid #343434;
+    border-radius: 10px;
+    outline: none;
+    color: $text-color;
+    @include desktop {
+      width: 400px;
+    }
+    @include tablets {
+      width: 350px;
+      padding: 15px 16px;
+      font-size: 14px;
+    }
+    @include phones {
+      width: 100%;
+    }
+
+    &:focus {
+      border: 1px solid #a672ff;
+    }
+  }
+
+  &__input {
+    height: 55px;
+    margin-bottom: 23px;
+    @include tablets {
+      height: 50px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__container.form__input-error &__input {
+    border: 1px solid #ff7272;
+  }
+
+  &__container.form__input-error &__text {
+    border: 1px solid #ff7272;
+  }
+
+  &__text {
+    height: 110px;
+    margin-bottom: 16px;
+    resize: none;
+    @include tablets {
+      height: 100px;
+      margin-bottom: 20px;
+    }
+    @include phones {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    bottom: 10px;
+    color: #ff7272;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 12px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 39px;
+    @include tablets {
+      margin-bottom: 40px;
+    }
+    @include phones {
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__checkbox,
+  &__checkbox:checked + .form__pseudo-item,
+  &__pseudo-item {
+    width: 21px;
+    height: 21px;
+    @include tablets {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+
+    &:checked + .form__pseudo-item {
+      background-color: #9455ff;
+      background-image: url(../../../images/form/tick.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__pseudo-item {
+    display: inline-block;
+    vertical-align: middle;
+    background: #343434;
+    border-radius: 5px;
+  }
+
+  &__accept {
+    margin-left: 15px;
+    @include text-params(#8c8c8c, 14px, normal, normal, 20px);
+    @include tablets {
+      @include text-params(#8c8c8c, 12px, normal, normal, 15px);
+    }
+    @include phones {
+      @include text-params(#8c8c8c, 12px, normal, normal, 18px);
+    }
+  }
+}

@@ -1,0 +1,198 @@
+.experience {
+  width: 100%;
+  padding-bottom: 110px;
+  background-color: $main-dark-alter;
+  @include tablets {
+    padding-bottom: 84px;
+  }
+  @include phones {
+    padding: 0 12px 74px;
+    box-sizing: border-box;
+  }
+
+  &__heading {
+    max-width: 835px;
+    margin: 0 auto;
+    transform: translate(0, -84px);
+    @include desktop {
+      max-width: 758px;
+      transform: translate(0, -35px);
+    }
+    @include tablets {
+      max-width: 576px;
+      box-sizing: border-box;
+    }
+    @include phones {
+      padding: 0 3px;
+      transform: translate(0, -20px);
+    }
+  }
+
+  &__wrapper {
+    padding: 156px 0 0;
+    @include desktop {
+      width: 974px;
+      padding: 20px 0 0;
+      margin: 0 auto;
+    }
+    @include tablets {
+      width: 728px;
+      padding: 32px 0 0;
+    }
+    @include phones {
+      width: 100%;
+      padding: 10px 0 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 14px;
+    @include text-params($text-color, 18px, normal, normal, 30px);
+    @include tablets {
+      margin: 0 0 17px;
+      @include text-params($text-color, 16px, normal, normal, 20px);
+    }
+    @include phones {
+      margin: 0 0 16px;
+      @include text-params($text-color, 14px, normal, normal, 20px);
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    @include desktop {
+      flex-direction: column;
+    }
+  }
+
+  &__player {
+    position: relative;
+  }
+
+  &__image {
+    width: 865px;
+    height: 486px;
+    @include desktop {
+      width: 974px;
+      height: 574px;
+    }
+    @include tablets {
+      width: 728px;
+      height: 410px;
+    }
+    @include phones {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__bage {
+    position: absolute;
+    top: 21px;
+    left: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 107px;
+    height: 27px;
+    background: #7b35f1;
+    border-radius: 11px;
+    @include desktop {
+      top: 14px;
+      left: 15px;
+    }
+    @include tablets {
+      top: 13px;
+      left: 13px;
+    }
+    @include phones {
+      top: 10px;
+      left: 10px;
+      width: 66px;
+      height: 15px;
+    }
+  }
+
+  &__bage-image {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../../images/experience/tick.svg');
+    background-repeat: no-repeat;
+    @include phones {
+      width: 11px;
+      height: 11px;
+      background-size: 11px;
+    }
+  }
+
+  &__bage-title {
+    width: 72px;
+    margin: 0;
+    @include text-params($text-color, 12px, normal, normal, 16px);
+    @include phones {
+      width: 48px;
+      @include text-params($text-color, 8px, normal, normal, 12px);
+    }
+  }
+
+  &__speakers {
+    display: flex;
+    margin-top: 27px;
+    @include desktop {
+      margin-bottom: 38px;
+    }
+    @include tablets {
+      margin-top: 24px;
+    }
+    @include phones {
+      flex-direction: column;
+      margin-top: 16px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__speaker {
+    display: flex;
+    margin-right: 56px;
+    @include desktop {
+      margin-right: 0;
+    }
+    @include phones {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__speaker-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    @include phones {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__speaker-info {
+    width: 267px;
+    margin-left: 20px;
+    @include phones {
+      margin-left: 10px;
+    }
+  }
+
+  &__speaker-name {
+    margin: 0;
+    @include text-params($text-color, 12px, normal, bold, 16px);
+  }
+
+  &__speaker-job {
+    margin: 7px 0 0;
+    @include text-params(#808185, 12px, normal, normal, 16px);
+    @include phones {
+      margin: 4px 0 0;
+      @include text-params(#808185, 10px, normal, normal, 14px);
+    }
+  }
+}

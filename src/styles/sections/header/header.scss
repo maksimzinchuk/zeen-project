@@ -1,0 +1,83 @@
+.header {
+  width: 100%;
+  background-color: $main-dark;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    padding: 16px 32px 0;
+    margin: 0 auto;
+    @include desktop {
+      width: 960px;
+    }
+    @include tablets {
+      width: 100%;
+      padding: 14px 32px;
+      box-sizing: border-box;
+    }
+    @include phones {
+      padding: 18px 15px;
+    }
+  }
+
+  &__logo {
+    width: 100px;
+    @include phones {
+      width: 80px;
+    }
+  }
+
+  &__nav {
+    margin-right: 88px;
+    margin-left: auto;
+    @include desktop {
+      margin-right: 54px;
+    }
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 579px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    @include text-params(#bbbbbb, 14px, normal, normal, 17px);
+    &:hover {
+      color: #ffffff;
+    }
+    &:visited {
+      color: #878787;
+    }
+  }
+
+  &__menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    outline: none;
+
+    @include tablets {
+      display: block;
+    }
+  }
+
+  &__menu-image {
+    width: 50px;
+    height: 50px;
+    @include phones {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}

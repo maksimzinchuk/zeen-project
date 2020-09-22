@@ -1,0 +1,25 @@
+.player {
+  margin-top: 80px;
+  @include tablets {
+    margin-top: 63px;
+  }
+  @include phones {
+    margin-top: 60px;
+  }
+
+  &__image {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    @include desktop {
+      width: 840px;
+    }
+    @include tablets {
+      width: 704px;
+    }
+    @include phones {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.slider {
+  width: 100%;
+  padding: 131px 0 118px;
+  background: #222222;
+  overflow: hidden;
+  @include desktop {
+    padding: 100px 0;
+  }
+  @include tablets {
+    padding: 81px 0 85px;
+  }
+  @include phones {
+    padding: 75px 15px;
+    box-sizing: border-box;
+  }
+
+  &__paragraph {
+    padding: 0;
+    margin: 48px 0 80px;
+    @include desktop {
+      margin: 43px 0 80px;
+    }
+    @include tablets {
+      margin: 38px 0 108px;
+    }
+    @include phones {
+      margin: 25px 0 60px;
+    }
+  }
+
+  &__wrapper {
+    padding: 0 160px;
+    @include desktop {
+      width: 760px;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__image {
+    width: 838px;
+    @include desktop {
+      width: 760px;
+    }
+  }
+
+  &__wrapper,
+  &__image {
+    @include tablets {
+      width: 580px;
+    }
+    @include phones {
+      width: 291px;
+    }
+  }
+
+  &__title {
+    margin: 40px 0 0;
+    @include text-params(#a672ff, 24px, normal, 600, 32px);
+    @include desktop {
+      margin: 25px 0 0;
+      @include text-params(#a672ff, 22px, normal, 600, 30px);
+    }
+    @include tablets {
+      @include text-params(#a672ff, 18px, normal, 600, 30px);
+    }
+    @include phones {
+      margin: 20px 0 0;
+      @include text-params(#a672ff, 16px, normal, 600, 24px);
+    }
+  }
+
+  &__about {
+    padding: 0;
+    margin: 0;
+  }
+
+  .about {
+    margin: 10px 0 0;
+  }
+
+  &__pagination {
+    display: none;
+    margin-top: 32px;
+    text-align: center;
+    @include phones {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.content {
+  width: 1160px;
+  padding: 0 103px;
+  margin: 0 auto;
+  @include desktopHd {
+    padding: 0;
+  }
+  @include desktop {
+    width: 974px;
+    //padding: 0;
+  }
+  @include tablets {
+    width: 728px;
+  }
+  @include phones {
+    width: 100%;
+  }
+
+  &__info {
+    padding: 0 160px;
+    @include desktop {
+      padding: 0 105px;
+    }
+    @include tablets {
+      padding: 0 75px;
+    }
+    @include phones {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.intro {
+  width: 100%;
+  background: rgb(24, 24, 24);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 24, 24, 1) 0%,
+    rgba(34, 34, 34, 1) 100%
+  );
+  @include phones {
+    overflow: hidden;
+  }
+
+  &__heading {
+    padding-top: 128px;
+    margin: 0 auto;
+    text-align: center;
+    @include text-params($text-color, 64px, normal, 800, 77px);
+    @include desktop {
+      padding-top: 125px;
+    }
+    @include tablets {
+      @include text-params($text-color, 48px, normal, 800, 56px);
+      padding: 122px 15px 0;
+    }
+    @include phones {
+      padding-top: 100px;
+      @include text-params($text-color, 36px, normal, 800, 48px);
+    }
+  }
+
+  &__image-wrapper {
+    margin: 96px auto 0;
+    @include desktop {
+      margin: 89px auto 0;
+    }
+    @include phones {
+      margin: 60px auto 0;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    @include desktop {
+      width: 633px;
+    }
+    @include tablets {
+      width: 520px;
+    }
+    @include phones {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      width: 109%;
+    }
+  }
+}

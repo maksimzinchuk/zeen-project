@@ -1,0 +1,20 @@
+.integration {
+  width: 100%;
+  padding: 123px 0 128px;
+  background: $main-dark;
+  @include desktop {
+    padding: 98px 0 100px;
+  }
+  @include tablets {
+    padding: 81px 0 85px;
+  }
+  @include phones {
+    padding: 74px 15px 75px;
+    box-sizing: border-box;
+  }
+
+  &__paragraph {
+    padding: 0;
+    margin: 0;
+  }
+}

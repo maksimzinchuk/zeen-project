@@ -1,0 +1,35 @@
+@import './variables';
+
+@mixin desktopHd() {
+  @media screen and (max-width: $bp-desktop-hd) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (max-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin tablets() {
+  @media screen and (max-width: $bp-tablets) {
+    @content;
+  }
+}
+
+@mixin phones() {
+  @media screen and (max-width: $bp-phones) {
+    @content;
+  }
+}
+
+@mixin text-params($color, $size, $style, $weight, $line-height) {
+  font: {
+    style: $style;
+    weight: $weight;
+    size: $size;
+  }
+  line-height: $line-height;
+  color: $color;
+}

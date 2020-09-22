@@ -1,0 +1,15 @@
+.swiper-container {
+  overflow: visible;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-image: url(../../../images/slider/inactive-slide.svg);
+}
+
+.swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  background-image: url(../../../images/slider/active-slide.svg);
+}
