@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeen</title>
+  <link rel="shortcut icon" href="/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon-48x48.png"><link rel="manifest" href="/favicon/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#FEE600"><meta name="application-name" content="boilerplate_frontend"><link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/favicon/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="/favicon/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="boilerplate_frontend"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"    href="/favicon/apple-touch-startup-image-640x1136.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"    href="/favicon/apple-touch-startup-image-750x1334.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"    href="/favicon/apple-touch-startup-image-828x1792.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"    href="/favicon/apple-touch-startup-image-1125x2436.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"    href="/favicon/apple-touch-startup-image-1242x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"    href="/favicon/apple-touch-startup-image-1242x2688.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="/favicon/apple-touch-startup-image-1536x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="/favicon/apple-touch-startup-image-1668x2224.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="/favicon/apple-touch-startup-image-1668x2388.png"><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"  href="/favicon/apple-touch-startup-image-2048x2732.png"><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"  href="/favicon/apple-touch-startup-image-1620x2160.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="/favicon/apple-touch-startup-image-1136x640.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="/favicon/apple-touch-startup-image-1334x750.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="/favicon/apple-touch-startup-image-1792x828.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"   href="/favicon/apple-touch-startup-image-2436x1125.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"   href="/favicon/apple-touch-startup-image-2208x1242.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"   href="/favicon/apple-touch-startup-image-2688x1242.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/favicon/apple-touch-startup-image-2048x1536.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/favicon/apple-touch-startup-image-2224x1668.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/favicon/apple-touch-startup-image-2388x1668.png"><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/favicon/apple-touch-startup-image-2732x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/favicon/apple-touch-startup-image-2160x1620.png"><meta name="msapplication-TileColor" content="#FEE600"><meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png"><meta name="msapplication-config" content="/favicon/browserconfig.xml"><link rel="yandex-tableau-widget" href="/favicon/yandex-browser-manifest.json"><link href="/main.119d1ee5f8481ca898e7.css" rel="stylesheet"></head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__wrapper">
+          <img
+            src="./images/header/logo.svg"
+            alt="логотип"
+            class="header__logo"
+          />
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li><a href="#" class="header__link">Как мы работаем</a></li>
+              <li><a href="#" class="header__link">Эфир</a></li>
+              <li><a href="#" class="header__link">Общение</a></li>
+              <li><a href="#" class="header__link">Виртуальные выставка</a></li>
+              <li><a href="#" class="header__link">Аналитика</a></li>
+            </ul>
+          </nav>
+          <button class="button">Связаться с нами</button>
+          <button class="button button_mobile">Написать</button>
+          <button class="header__menu-mobile">
+            <img
+              src="./images/header/menu.svg"
+              alt="меню"
+              class="header__menu-image"
+            />
+          </button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="intro">
+          <div class="content">
+            <h1 class="intro__heading">
+              Платформа для<br />
+              онлайн мероприятий
+            </h1>
+            <div class="intro__image-wrapper">
+              <img
+                src="./images/intro/intro.svg"
+                alt="интро"
+                class="intro__image"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="experience">
+          <div class="content">
+            <h2 class="heading experience__heading">
+              <span class="heading__span">Zeen</span> — это комплексное решение
+              по созданию нового опыта для участника в&nbsp;рамках онлайн
+              мероприятия
+            </h2>
+            <div class="experience__wrapper">
+              <p class="experience__title">
+                Полностью удаленный онбординг новых корпоративных клиентов с
+                открытием счета
+              </p>
+              <div class="experience__container">
+                <div>
+                  <div class="experience__player">
+                    <img
+                      src="./images/experience/player.jpg"
+                      alt="плеер"
+                      class="experience__image"
+                    />
+                    <div class="experience__bage">
+                      <div class="experience__bage-image"></div>
+                      <p class="experience__bage-title">Голосование</p>
+                    </div>
+                  </div>
+                  <div class="experience__speakers">
+                    <div class="experience__speaker">
+                      <img
+                        src="./images/experience/speaker1.jpg"
+                        alt="Наталья Москаленко"
+                        class="experience__speaker-photo"
+                      />
+                      <div class="experience__speaker-info">
+                        <h3 class="experience__speaker-name">
+                          Наталья Москаленко
+                        </h3>
+                        <p class="experience__speaker-job">
+                          Руководитель направления по развитию корпоративных
+                          расчетных продуктов
+                        </p>
+                      </div>
+                    </div>
+                    <div class="experience__speaker">
+                      <img
+                        src="./images/experience/speaker2.jpg"
+                        alt="Мария Девятилова"
+                        class="experience__speaker-photo"
+                      />
+                      <div class="experience__speaker-info">
+                        <h3 class="experience__speaker-name">
+                          Мария Девятилова
+                        </h3>
+                        <p class="experience__speaker-job">
+                          Руководитель отдела клиентского обслуживания
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="chat"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <div class="content">
+            <div class="content__info">
+              <h2 class="heading">
+                Собственный плеер<br />
+                для проведения эфира
+              </h2>
+              <div class="about">
+                <p class="features__title">Возможности плеера:</p>
+                <ul class="features__list">
+                  <li class="features__item">
+                    100 000 пользователей в пике
+                  </li>
+                  <li class="features__item">
+                    15 параллельных залов
+                  </li>
+                  <li class="features__item">
+                    16 языков синхронного перевода
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="player">
+              <img
+                src="./images/features/player.png"
+                alt="плеер"
+                class="player__image"
+              />
+              <div class="links">
+                <div class="links__button">
+                  <img
+                    src="./images/features/play.svg"
+                    alt="значок play"
+                    class="links__image"
+                  />
+                  <a href="#" class="links__link">Смотреть обучающее видео</a>
+                </div>
+                <div class="links__button">
+                  <img
+                    src="./images/features/question.svg"
+                    alt="значок play"
+                    class="links__image"
+                  />
+                  <a href="#" class="links__link"
+                    >Узнать больше о плеере ZEEN</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="speakers">
+          <div class="content">
+            <div class="content__info">
+              <h2 class="heading">
+                Живое общение
+                <span class="heading__span">со&nbsp;спикерами</span>&nbsp;после
+                выступления
+              </h2>
+              <div class="about">
+                <p class="speakers__paragraph">
+                  Возможность пообщаться со спикером после выступления
+                  по&nbsp;видео связи, задать вопрос, уточнить, обменяться
+                  контактами.
+                </p>
+                <p class="speakers__paragraph">
+                  Удобная форма управления вопросами: спикер видит сколько
+                  вопросов в очереди, сколько участников хотят с ним пообщаться.
+                </p>
+              </div>
+            </div>
+            <div class="player">
+              <img
+                src="./images/speakers/player.png"
+                alt="плеер"
+                class="player__image"
+              />
+              <div class="links">
+                <div class="links__button">
+                  <img
+                    src="./images/speakers/message.svg"
+                    alt="облако сообщения"
+                    class="links__image link__mobile"
+                  />
+                  <a href="#" class="links__link"
+                    >Узнать больше о возможностях живого общения</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="integration">
+          <div class="content">
+            <div class="content__info">
+              <h2 class="heading">
+                Интеграции <span class="heading__span">партнеров</span><br />
+                в мероприятия
+              </h2>
+              <div class="about">
+                <p class="integration__paragraph">
+                  Мероприятие собирает классную аудиторию, которая может быть
+                  интересна не только вам, но и партнерам и спонсорам.
+                </p>
+              </div>
+            </div>
+            <div class="partner-blocks">
+              <div class="partner-blocks__wrapper">
+                <div class="partner-blocks__block partner-blocks__block_big">
+                  <img
+                    src="./images/partner-blocks/trending-up.svg"
+                    alt="восходящая стрелка"
+                    class="partner-blocks__image"
+                  />
+                  <p class="partner-blocks__text">
+                    Тематический блок на сайте, например, интерактивный тест по
+                    продукту
+                  </p>
+                </div>
+                <div class="partner-blocks__block partner-blocks__block_small">
+                  <img
+                    src="./images/partner-blocks/copy.svg"
+                    alt="два квадрата"
+                    class="partner-blocks__image"
+                  />
+                  <p class="partner-blocks__text">Отдельный стенд</p>
+                </div>
+                <!--                        </div>-->
+                <!--                        <div class="partner-blocks__wrapper">-->
+                <div class="partner-blocks__block partner-blocks__block_small">
+                  <img
+                    src="./images/partner-blocks/message-circle.svg"
+                    alt="облако сообщения"
+                    class="partner-blocks__image"
+                  />
+                  <p class="partner-blocks__text">
+                    Свой текстовый<br />
+                    комментатор
+                  </p>
+                </div>
+                <div class="partner-blocks__block partner-blocks__block_big">
+                  <img
+                    src="./images/partner-blocks/play.svg"
+                    alt="стрелка плей"
+                    class="partner-blocks__image"
+                  />
+                  <p class="partner-blocks__text">
+                    Отдельная трансляция, свой собственный брендированный эфир
+                  </p>
+                </div>
+              </div>
+              <div class="links">
+                <div class="links__button">
+                  <a href="#" class="links__link"
+                    >Запросить предложение по интеграции партнеров в<br />
+                    мероприятие &#8594;</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="slider">
+          <div class="content">
+            <div class="content__info">
+              <h2 class="heading">
+                Безграничные возможности
+                <span class="heading__span">кастомизации</span>
+              </h2>
+              <div class="about">
+                <p class="slider__paragraph">
+                  Онлайн мероприятия как и оффлайн должны быть непохожими друг
+                  на друга.
+                </p>
+              </div>
+            </div>
+            <div class="slider__wrapper">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/slider/slide1.png"
+                      alt="слайд"
+                      class="slider__image"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/slider/slide3.png"
+                      alt="слайд"
+                      class="slider__image"
+                    />
+                    <h3 class="slider__title">IDRF 2020 | ZEEN</h3>
+                    <div class="about">
+                      <p class="slider__about">
+                        В этом году IDRF встретил ZEEN и вот, что получилось.<br />
+                        Скоро расскажем все детали!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/slider/slide2.png"
+                      alt="слайд"
+                      class="slider__image"
+                    />
+                  </div>
+                </div>
+                <div class="slider__pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="form">
+          <div class="content">
+            <div class="content__info">
+              <h2 class="heading">
+                Запрос на онлайн<br />
+                мероприятие
+              </h2>
+            </div>
+            <div class="form__wrapper">
+              <img
+                src="./images/form/iphone.png"
+                alt="iphone"
+                class="form__image"
+              />
+              <div id="Validation"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <img
+            src="./images/header/logo.svg"
+            alt="логотип"
+            class="footer__logo"
+          />
+          <div class="footer__contacts">
+            <p class="footer__contact">+7 (999) 999-99-99</p>
+            <p class="footer__contact">hello@zeenevent.com</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <script type="text/javascript" src="/main.a2f17b41660b15dd27ff.build.js"></script></body>
+</html>
