@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "api_version": 1,
   "layout": {
-    "logo": "/favicon/yandex-browser-50x50.png",
+    "logo": "/zeen-project/favicon/yandex-browser-50x50.png",
     "color": "#FEE600",
     "show_title": true
   }

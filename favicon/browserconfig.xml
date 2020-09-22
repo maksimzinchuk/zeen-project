@@ -2,10 +2,10 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="/favicon/mstile-70x70.png"/>
-            <square150x150logo src="/favicon/mstile-150x150.png"/>
-            <wide310x150logo src="/favicon/mstile-310x150.png"/>
-            <square310x310logo src="/favicon/mstile-310x310.png"/>
+            <square70x70logo src="/zeen-project/favicon/mstile-70x70.png"/>
+            <square150x150logo src="/zeen-project/favicon/mstile-150x150.png"/>
+            <wide310x150logo src="/zeen-project/favicon/mstile-310x150.png"/>
+            <square310x310logo src="/zeen-project/favicon/mstile-310x310.png"/>
             <TileColor>#FEE600</TileColor>
 
         </tile>
